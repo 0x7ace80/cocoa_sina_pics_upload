@@ -186,4 +186,16 @@
 	return YES;
 
 }
+
+-(void) tableViewSelectionDidChange:(NSNotification *)aNotification
+{
+	NSIndexSet* selectedRow = [tvFileList selectedRowIndexes];
+	NSUInteger index  = [selectedRow firstIndex];
+	if (index < [picFileList count])
+	{
+		NSString* selectedFile = [picFileList objectAtIndex:index];
+		image = [[[NSImage alloc] initWithContentsOfFile: selectedFile] autorelease];
+		[imageview setImage:image];
+	}
+}
 @end

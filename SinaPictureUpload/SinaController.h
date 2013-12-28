@@ -7,11 +7,13 @@
 	SinaConnection* sina;
 	
 	NSMutableArray* picFileList;
+	NSImage* image;
 	
-	IBOutlet NSTextField* txtUser;
-	IBOutlet NSTextField* txtPass;
-	IBOutlet NSTextField* labelMsg;
-	IBOutlet NSWindow* windowLogin;
+	IBOutlet NSTextField*	txtUser;
+	IBOutlet NSTextField*	txtPass;
+	IBOutlet NSTextField*	labelMsg;
+	IBOutlet NSWindow*		windowLogin;
+	IBOutlet NSImageView*	imageview;
 	
 	IBOutlet NSTableView* tvFileList;
 }
@@ -58,5 +60,6 @@
 			   row: (int) row
 	 dropOperation: (NSTableViewDropOperation) operation;
 
-
+// Delegate
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification;
 @end
