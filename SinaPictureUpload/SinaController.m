@@ -6,6 +6,7 @@
 
 -(id) init 
 {
+	[[NSAutoreleasePool alloc] init];
 	sina = [[SinaConnection alloc] init];
 	picFileList = [[NSMutableArray alloc] init];
 	
@@ -108,6 +109,9 @@
 				ok = [sina sinaUploadReceive:fileName];
 			}
 		}
+		
+		[picFileList removeAllObjects];
+		[tvFileList reloadData];
 	}
 }
 

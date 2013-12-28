@@ -4,10 +4,11 @@
 
 @interface SinaConnection : NSObject 
 {
+	// AutoRelease String.
 	NSString* m_userId;
 	NSString* m_session;
 	NSString* m_token;
-	NSString* m_picdata;
+	NSString* m_recipe;
 }
 
 -(id) init;

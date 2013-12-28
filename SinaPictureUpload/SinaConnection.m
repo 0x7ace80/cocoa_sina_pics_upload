@@ -22,16 +22,15 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	m_token   = nil;
 	m_userId  = nil;
 	m_session = nil;
-	
+	m_recipe  = nil;
 	return [super init];
 }
 
 -(void) dealloc 
 {
-	if ( m_token   != nil) [m_token release];
-	if ( m_userId  != nil) [m_userId release];
-	if ( m_session != nil) [m_session release];
-	
+	if (m_token != nil) [m_token release];
+	if (m_userId != nil) [m_userId release];
+	if (m_session != nil) [m_session release];
 	[super dealloc];
 }
 
@@ -79,17 +78,16 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	m_userId = [[NSString alloc] initWithString:[UIdArray objectAtIndex:1]];
 	m_token =  [[NSString alloc] initWithString:[strArray objectAtIndex:2]];
 	
-	NSLog(@"%@", strResp);
-	NSLog(@"%@", m_token);
-	NSLog(@"%@", m_session);
-	NSLog(@"%@", m_userId);
+//	NSLog(@"%@", strResp);
+//	NSLog(@"%@", m_token);
+//	NSLog(@"%@", m_session);
+//	NSLog(@"%@", m_userId);
 	
 	return TRUE;
 }
 
 -(BOOL) sinaUploadImageAtPath:(NSString *)ImagePath 
 {
-	
 	NSMutableString* strUpload = [NSMutableString stringWithString:uploadURL];
 	[strUpload appendString: @"token="];
 	[strUpload appendString: m_token];
@@ -98,6 +96,17 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	
 	//NSData* imagedata = [NSData dataWithContentsOfFile:pic_path];
 	NSData* imagedata = [NSData dataWithContentsOfFile:ImagePath];
+	
+	// File size is Zero.
+	if ([imagedata length] == 0)
+	{
+		return FALSE;
+	}
+	// File size bigger than 5M
+	if ([imagedata length] > (5<<20) ) 
+	{
+		return FALSE;
+	}
 	NSMutableString* body = [[[NSMutableString alloc] init] autorelease];
 	[body appendFormat:@"--%@\r\n", boundray];
 	[body appendString:@"Content-Disposition: form-data; name=\"pic1\"; filename=\"test.jpg\"\r\n"];
@@ -132,13 +141,19 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	NSData* responseData = [NSURLConnection sendSynchronousRequest:uploadReq 
 												 returningResponse:&response 
 															 error:&error];
+	
+	if ([responseData length] == 0) 
+	{
+		return FALSE;
+	}
 	NSString* strResp = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
 	//NSLog(@"%@", strResp);
 
 	NSArray* respArray = [strResp componentsSeparatedByString:@"data>"];
 	NSMutableString* tmp = [NSMutableString stringWithString:[respArray objectAtIndex:1]];
-	m_picdata = [tmp substringToIndex:([tmp length]-2)];
-	NSLog(@"%@", m_picdata);
+	m_recipe = [[[NSString alloc] initWithString:[tmp substringToIndex:([tmp length]-2)]] autorelease];
+	
+	NSLog(@"%@", m_recipe);
 	
 	return TRUE;
 }
@@ -159,7 +174,7 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	NSMutableString* body = [[[NSMutableString alloc] init] autorelease];
 	[body appendFormat:@"--%@\r\n", boundray];
 	[body appendString:@"Content-Disposition: form-data; name=\"picdata\"\r\n\r\n"];
-	[body appendString:m_picdata];
+	[body appendString:m_recipe];
 	
 	NSMutableData* reqData = [[[NSMutableData alloc] init] autorelease];
 	[reqData appendData:[body dataUsingEncoding:NSUTF8StringEncoding]];
@@ -188,12 +203,14 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	NSData* responseData = [NSURLConnection sendSynchronousRequest: uploadReq 
 												 returningResponse: &response 
 															 error: &error];
-	
-	NSString* strResp = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
-	NSLog(@"%@", strResp);
+	if ([responseData length] == 0) 
+	{
+		return FALSE;
+	}
+//	NSString* strResp = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
+//	NSLog(@"%@", strResp);
 	
 	return TRUE;
-	
 }
 
 /**
