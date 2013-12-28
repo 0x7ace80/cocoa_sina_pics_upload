@@ -6,7 +6,6 @@
 
 -(id) init 
 {
-	[[NSAutoreleasePool alloc] init];
 	sina = [[SinaConnection alloc] init];
 	picFileList = [[NSMutableArray alloc] init];
 	
@@ -97,6 +96,7 @@
 
 -(IBAction) btnUploadClick:(id)sender
 {
+	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	if ([picFileList count] > 0)
 	{
 		for(int index = 0; index < [picFileList count]; index++)
@@ -113,6 +113,7 @@
 		[picFileList removeAllObjects];
 		[tvFileList reloadData];
 	}
+	[pool release];
 }
 
 -(void) awakeFromNib

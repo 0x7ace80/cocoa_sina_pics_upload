@@ -28,9 +28,7 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 
 -(void) dealloc 
 {
-	if (m_token != nil) [m_token release];
-	if (m_userId != nil) [m_userId release];
-	if (m_session != nil) [m_session release];
+
 	[super dealloc];
 }
 
@@ -72,14 +70,12 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	
 	NSArray* strArray = [strResp componentsSeparatedByString:@";"];
 	NSString* UIdPair = [strArray objectAtIndex:0];
-	m_session = [[NSString alloc] initWithString:[strArray objectAtIndex:1]];
+	m_session = [[[[NSString alloc] initWithFormat:@"%@",[strArray objectAtIndex:1]] autorelease] retain];
 	
 	NSArray*  UIdArray = [UIdPair componentsSeparatedByString:@"="];
-	m_userId = [[NSString alloc] initWithString:[UIdArray objectAtIndex:1]];
-	m_token =  [[NSString alloc] initWithString:[strArray objectAtIndex:2]];
-	
+	m_userId = [[[[NSString alloc] initWithFormat:@"%@",[UIdArray objectAtIndex:1]] autorelease] retain];
+	m_token =  [[[[NSString alloc] initWithFormat:@"%@",[strArray objectAtIndex:2]] autorelease] retain];
 //	NSLog(@"%@", strResp);
-//	NSLog(@"%@", m_token);
 //	NSLog(@"%@", m_session);
 //	NSLog(@"%@", m_userId);
 	
@@ -151,10 +147,8 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 
 	NSArray* respArray = [strResp componentsSeparatedByString:@"data>"];
 	NSMutableString* tmp = [NSMutableString stringWithString:[respArray objectAtIndex:1]];
-	m_recipe = [[[NSString alloc] initWithString:[tmp substringToIndex:([tmp length]-2)]] autorelease];
-	
-	NSLog(@"%@", m_recipe);
-	
+	m_recipe = [[[[NSString alloc] initWithFormat:@"%@",[tmp substringToIndex:([tmp length]-2)]] autorelease] retain];
+
 	return TRUE;
 }
 
@@ -207,6 +201,7 @@ static NSString* const pic_path = @"/Volumes/FutureHD/Photos/2009-06-18.jpg";
 	{
 		return FALSE;
 	}
+	
 //	NSString* strResp = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
 //	NSLog(@"%@", strResp);
 	
