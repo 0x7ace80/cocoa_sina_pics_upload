@@ -67,8 +67,6 @@
 -(IBAction) btnCancelClick:(id)sender 
 {
 	[NSApp terminate:self];
-	//[windowLogin close];
-	//[[self window] makeKeyAndOrderFront:nil];
 }
 
 -(IBAction) btnAddClick:(id)sender

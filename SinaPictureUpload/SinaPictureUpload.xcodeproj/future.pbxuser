@@ -32,7 +32,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = D8C059C5184A91660006417A /* SinaPictureUpload */;
 		activeTarget = 8D1107260486CEB800E47090 /* SinaPictureUpload */;
 		addToTargets = (
@@ -261,6 +261,8 @@
 			D8B47D83187C5C8300CFEC1E /* PBXTextBookmark */ = D8B47D83187C5C8300CFEC1E /* PBXTextBookmark */;
 			D8B47D84187C5C8300CFEC1E /* PBXTextBookmark */ = D8B47D84187C5C8300CFEC1E /* PBXTextBookmark */;
 			D8B47D88187C5C9000CFEC1E /* PBXTextBookmark */ = D8B47D88187C5C9000CFEC1E /* PBXTextBookmark */;
+			D8B47D8C187C5CBF00CFEC1E /* PBXTextBookmark */ = D8B47D8C187C5CBF00CFEC1E /* PBXTextBookmark */;
+			D8B47D8E187C5D0D00CFEC1E /* PBXTextBookmark */ = D8B47D8E187C5D0D00CFEC1E /* PBXTextBookmark */;
 			D8C059F8184AA6800006417A = D8C059F8184AA6800006417A /* PBXTextBookmark */;
 		};
 		sourceControlManager = D8C059D6184A91740006417A /* Source Control */;
@@ -372,7 +374,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 160";
 		rLen = 0;
-		rLoc = 3730;
+		rLoc = 3661;
 		rType = 0;
 		vrLen = 927;
 		vrLoc = 4587;
@@ -666,9 +668,9 @@
 	};
 	D8AF06191869302F00280472 /* SinaController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {927, 3406}}";
-			sepNavSelRange = "{3026, 0}";
-			sepNavVisRange = "{315, 736}";
+			sepNavIntBoundsRect = "{{0, 0}, {927, 3419}}";
+			sepNavSelRange = "{1054, 0}";
+			sepNavVisRange = "{705, 774}";
 			sepNavWindowFrame = "{{206, 0}, {1069, 778}}";
 		};
 	};
@@ -772,7 +774,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 124";
 		rLen = 0;
-		rLoc = 2585;
+		rLoc = 2516;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 1936;
@@ -782,7 +784,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 124";
 		rLen = 0;
-		rLoc = 2585;
+		rLoc = 2516;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 1936;
@@ -802,7 +804,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 124";
 		rLen = 0;
-		rLoc = 2599;
+		rLoc = 2530;
 		rType = 0;
 		vrLen = 1040;
 		vrLoc = 1936;
@@ -926,7 +928,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 198";
 		rLen = 0;
-		rLoc = 4693;
+		rLoc = 4624;
 		rType = 0;
 		vrLen = 1020;
 		vrLoc = 4160;
@@ -1030,7 +1032,7 @@
 		isa = PBXTextBookmark;
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		rLen = 1;
-		rLoc = 111;
+		rLoc = 109;
 		rType = 1;
 	};
 	D8B47D60187C56CA00CFEC1E /* PBXTextBookmark */ = {
@@ -1038,7 +1040,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 145";
 		rLen = 0;
-		rLoc = 3262;
+		rLoc = 3193;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 2894;
@@ -1048,7 +1050,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 145";
 		rLen = 0;
-		rLoc = 3267;
+		rLoc = 3198;
 		rType = 0;
 		vrLen = 884;
 		vrLoc = 2912;
@@ -1088,7 +1090,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 148";
 		rLen = 0;
-		rLoc = 3226;
+		rLoc = 3157;
 		rType = 0;
 		vrLen = 846;
 		vrLoc = 2905;
@@ -1098,7 +1100,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 148";
 		rLen = 0;
-		rLoc = 3226;
+		rLoc = 3157;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 2550;
@@ -1138,7 +1140,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 149";
 		rLen = 0;
-		rLoc = 3240;
+		rLoc = 3171;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 1938;
@@ -1148,7 +1150,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 149";
 		rLen = 0;
-		rLoc = 3224;
+		rLoc = 3155;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 2909;
@@ -1158,7 +1160,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 149";
 		rLen = 0;
-		rLoc = 3224;
+		rLoc = 3155;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 2909;
@@ -1178,7 +1180,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 149";
 		rLen = 0;
-		rLoc = 3224;
+		rLoc = 3155;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 2567;
@@ -1188,7 +1190,7 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 130";
 		rLen = 0;
-		rLoc = 2855;
+		rLoc = 2786;
 		rType = 0;
 		vrLen = 756;
 		vrLoc = 2681;
@@ -1198,10 +1200,30 @@
 		fRef = D8AF06191869302F00280472 /* SinaController.m */;
 		name = "SinaController.m: 142";
 		rLen = 0;
-		rLoc = 3026;
+		rLoc = 2957;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 315;
+	};
+	D8B47D8C187C5CBF00CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8AF06191869302F00280472 /* SinaController.m */;
+		name = "SinaController.m: 69";
+		rLen = 0;
+		rLoc = 1210;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 705;
+	};
+	D8B47D8E187C5D0D00CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8AF06191869302F00280472 /* SinaController.m */;
+		name = "SinaController.m: 60";
+		rLen = 0;
+		rLoc = 1054;
+		rType = 0;
+		vrLen = 774;
+		vrLoc = 705;
 	};
 	D8C059C5184A91660006417A /* SinaPictureUpload */ = {
 		isa = PBXExecutable;
