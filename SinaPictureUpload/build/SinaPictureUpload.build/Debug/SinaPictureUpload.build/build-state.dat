@@ -1,7 +1,7 @@
 TSinaPictureUpload
 v7
 r0
-t410803072.470713
+t410803343.731131
 cCheck dependencies
 cProcessInfoPlistFile /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Info.plist SinaPictureUpload-Info.plist
 cCopyStringsFile /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -36,8 +36,8 @@ t1385847269
 s45
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib
-c0000000052CC23F7000000000001D658
-t1389110263
+c0000000052CC24A2000000000001D658
+t1389110434
 s120408
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.h
@@ -47,9 +47,9 @@ s1121
 i<Cocoa/Cocoa.h>
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m
-c0000000052CC1E130000000000002FEA
-t1389108755
-s12266
+c0000000052CC24ED0000000000002FF0
+t1389110509
+s12272
 i"SinaConnection.h"
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.h
@@ -60,8 +60,8 @@ i<Cocoa/Cocoa.h>
 i"SinaConnection.h"
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m
-c0000000052CC2272000000000000169D
-t1389109874
+c0000000052CC24FC000000000000169D
+t1389110524
 s5789
 i"SinaController.h"
 
@@ -95,7 +95,7 @@ t1389108323
 s46828
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app
-t1389110272
+t1389110543
 s102
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Info.plist
@@ -103,8 +103,8 @@ t1389108720
 s1425
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload
-t1389109878
-s47120
+t1389110543
+s47072
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/PkgInfo
 t1389108720
@@ -115,7 +115,7 @@ t1385852440
 s92
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Resources/English.lproj/MainMenu.nib
-t1389110272
+t1389110542
 s24050
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Resources/SinaLogin.nib
@@ -127,11 +127,11 @@ t1389108426
 s46828
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaConnection.o
-t1389109562
-s42060
+t1389110543
+s41596
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaController.o
-t1389109878
+t1389110543
 s55480
 
 N/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaPictureUpload.LinkFileList
@@ -180,11 +180,11 @@ s1118
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies410803071#410803071#0(0"0(0#1#0"8622927616#0"0#
+lSLF07#2@18"Check dependencies410803342#410803342#0(0"0(0#1#0"8623481472#0"0#
 
 CCompileC build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaConnection.o /Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s410802362.201371
-e410802362.736161
+s410803343.128803
+e410803343.454465
 r1
 xCompileC
 xbuild/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaConnection.o
@@ -193,11 +193,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m410802362#410802362#0(0"0(0#0#56"/Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m8620946688#1681"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-generated-files.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-own-target-headers.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-all-target-headers.hmap -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-project-headers.hmap -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/include -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources/x86_64 -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources -include /var/folders/My/My7HL0QZHfqeF2HsQuR5bU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SinaPictureUpload_Prefix-eqwzhsnbwpvykohbksdjkcfmznha/SinaPictureUpload_Prefix.pch -c /Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaConnection.o0#
+lSLF07#2@64"Compile /Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m410803343#410803343#0(0"0(0#0#56"/Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m8620939136#1681"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-generated-files.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-own-target-headers.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-all-target-headers.hmap -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-project-headers.hmap -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/include -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources/x86_64 -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources -include /var/folders/My/My7HL0QZHfqeF2HsQuR5bU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SinaPictureUpload_Prefix-eqwzhsnbwpvykohbksdjkcfmznha/SinaPictureUpload_Prefix.pch -c /Volumes/FutureHD/Dev/SinaPictureUpload/SinaConnection.m -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaConnection.o0#
 
 CCompileC build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaController.o /Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s410802678.094931
-e410802678.524706
+s410803343.129745
+e410803343.472491
 r1
 xCompileC
 xbuild/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaController.o
@@ -206,7 +206,7 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m410802678#410802678#0(0"0(0#0#56"/Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m8618243296#1681"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-generated-files.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-own-target-headers.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-all-target-headers.hmap -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-project-headers.hmap -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/include -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources/x86_64 -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources -include /var/folders/My/My7HL0QZHfqeF2HsQuR5bU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SinaPictureUpload_Prefix-eqwzhsnbwpvykohbksdjkcfmznha/SinaPictureUpload_Prefix.pch -c /Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaController.o0#
+lSLF07#2@64"Compile /Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m410803343#410803343#0(0"0(0#0#56"/Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m8620767104#1681"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-generated-files.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-own-target-headers.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-all-target-headers.hmap -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-project-headers.hmap -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/include -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources/x86_64 -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources -include /var/folders/My/My7HL0QZHfqeF2HsQuR5bU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SinaPictureUpload_Prefix-eqwzhsnbwpvykohbksdjkcfmznha/SinaPictureUpload_Prefix.pch -c /Volumes/FutureHD/Dev/SinaPictureUpload/SinaController.m -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaController.o0#
 
 CCompileC build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaPictureUploadAppDelegate.o /Volumes/FutureHD/Dev/SinaPictureUpload/SinaPictureUploadAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s410790862.398506
@@ -248,12 +248,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@69"Compile /Volumes/FutureHD/Dev/SinaPictureUpload/sinaLoginConnection.m408493407#408493408#0(0"0(0#0#61"/Volumes/FutureHD/Dev/SinaPictureUpload/sinaLoginConnection.m8613978880#1691"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-generated-files.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-own-target-headers.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-all-target-headers.hmap -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-project-headers.hmap -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/include -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources/x86_64 -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources -include /var/folders/My/My7HL0QZHfqeF2HsQuR5bU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SinaPictureUpload_Prefix-eqwzhsnbwpvykohbksdjkcfmznha/SinaPictureUpload_Prefix.pch -c /Volumes/FutureHD/Dev/SinaPictureUpload/sinaLoginConnection.m -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/sinaLoginConnection.o0#
 
 CCompileXIB /Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib
-s410803071.415153
-e410803072.432654
+s410803342.304323
+e410803343.128337
 r1
 xCompileXIB
 x/Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib410803071#410803072#0(0"0(0#0#66"/Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib8622266688#377"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Resources/English.lproj/MainMenu.nib /Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib410803342#410803343#0(0"0(0#0#66"/Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib8622852128#377"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Resources/English.lproj/MainMenu.nib /Volumes/FutureHD/Dev/SinaPictureUpload/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
 
 CCompileXIB /Volumes/FutureHD/Dev/SinaPictureUpload/SinaLogin.xib
 s409631113.309415
@@ -282,14 +282,14 @@ xappIcon.icns
 lSLF07#2@17"Copy appIcon.icns410801226#410801226#0(0"0(0#0#52"/Volumes/FutureHD/Dev/SinaPictureUpload/appIcon.icns8607449504#355"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Volumes/FutureHD/Dev/SinaPictureUpload/appIcon.icns /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Resources0#
 
 CLd /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload normal x86_64
-s410802678.524791
-e410802678.565235
+s410803343.472589
+e410803343.728372
 r1
 xLd
 x/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload
 xnormal
 xx86_64
-lSLF07#2@111"Link /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload410802678#410802678#0(0"0(0#0#0"8618781760#597"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -filelist /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaPictureUpload.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload0#
+lSLF07#2@111"Link /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload410803343#410803343#0(0"0(0#0#0"8620571840#597"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -filelist /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/Objects-normal/x86_64/SinaPictureUpload.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/MacOS/SinaPictureUpload0#
 
 CProcessInfoPlistFile /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app/Contents/Info.plist SinaPictureUpload-Info.plist
 s410801520.391825
@@ -314,10 +314,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@39"Precompile SinaPictureUpload_Prefix.pch407545241#407545249#0(0"0(0#0#68"/Volumes/FutureHD/Dev/SinaPictureUpload/SinaPictureUpload_Prefix.pch8630573536#1556"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-generated-files.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-own-target-headers.hmap -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-all-target-headers.hmap -iquote /Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/SinaPictureUpload-project-headers.hmap -F/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/include -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources/x86_64 -I/Volumes/FutureHD/Dev/SinaPictureUpload/build/SinaPictureUpload.build/Debug/SinaPictureUpload.build/DerivedSources -c /Volumes/FutureHD/Dev/SinaPictureUpload/SinaPictureUpload_Prefix.pch -o /var/folders/My/My7HL0QZHfqeF2HsQuR5bU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SinaPictureUpload_Prefix-eqwzhsnbwpvykohbksdjkcfmznha/SinaPictureUpload_Prefix.pch.gch0#
 
 CTouch /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app
-s410803072.433266
-e410803072.470582
+s410803343.728461
+e410803343.731094
 r1
 xTouch
 x/Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app
-lSLF07#2@79"Touch /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app410803072#410803072#0(0"0(0#0#0"8602598624#143"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    /usr/bin/touch -c /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app0#
+lSLF07#2@79"Touch /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app410803343#410803343#0(0"0(0#0#0"8600075616#143"    cd /Volumes/FutureHD/Dev/SinaPictureUpload    /usr/bin/touch -c /Volumes/FutureHD/Dev/SinaPictureUpload/build/Debug/SinaPictureUpload.app0#
 

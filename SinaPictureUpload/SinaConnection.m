@@ -96,7 +96,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 	
 	[strCtg appendString: @"&pagenum=200&pageno=0&isdesc=1"];
 	
-	NSLog(@"CtgURL:%@", strCtg);
+	//NSLog(@"CtgURL:%@", strCtg);
 	NSMutableURLRequest* ctgRequest = [[[NSMutableURLRequest alloc] init] autorelease];
 	[ctgRequest setURL: [NSURL URLWithString:strCtg]];
 	[ctgRequest setHTTPMethod:@"GET"];
@@ -296,7 +296,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 			if (specialName != nil) 
 			{
 				[m_ctgName addObject:specialName];
-				NSLog(@"Add CtgName:%@", specialName);
+				//NSLog(@"Add CtgName:%@", specialName);
 			}
 			else return FALSE;
 		}
@@ -307,7 +307,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 			if (specialId != nil) 
 			{
 				[m_ctgId addObject:specialId];
-				NSLog(@"Add CtgId:%@, size %d", specialId, [m_ctgId count]);
+				//NSLog(@"Add CtgId:%@, size %d", specialId, [m_ctgId count]);
 			}
 			else return FALSE;
 		}

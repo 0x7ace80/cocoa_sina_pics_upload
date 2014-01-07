@@ -256,6 +256,11 @@
 			D8B47D73187C59F700CFEC1E /* PBXTextBookmark */ = D8B47D73187C59F700CFEC1E /* PBXTextBookmark */;
 			D8B47D74187C59F700CFEC1E /* PBXTextBookmark */ = D8B47D74187C59F700CFEC1E /* PBXTextBookmark */;
 			D8B47D75187C59F700CFEC1E /* PBXTextBookmark */ = D8B47D75187C59F700CFEC1E /* PBXTextBookmark */;
+			D8B47D7E187C5C5000CFEC1E /* PBXTextBookmark */ = D8B47D7E187C5C5000CFEC1E /* PBXTextBookmark */;
+			D8B47D82187C5C8300CFEC1E /* PBXTextBookmark */ = D8B47D82187C5C8300CFEC1E /* PBXTextBookmark */;
+			D8B47D83187C5C8300CFEC1E /* PBXTextBookmark */ = D8B47D83187C5C8300CFEC1E /* PBXTextBookmark */;
+			D8B47D84187C5C8300CFEC1E /* PBXTextBookmark */ = D8B47D84187C5C8300CFEC1E /* PBXTextBookmark */;
+			D8B47D88187C5C9000CFEC1E /* PBXTextBookmark */ = D8B47D88187C5C9000CFEC1E /* PBXTextBookmark */;
 			D8C059F8184AA6800006417A = D8C059F8184AA6800006417A /* PBXTextBookmark */;
 		};
 		sourceControlManager = D8C059D6184A91740006417A /* Source Control */;
@@ -442,7 +447,7 @@
 		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
 		name = "SinaConnection.m: 273";
 		rLen = 55;
-		rLoc = 10082;
+		rLoc = 10084;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 9747;
@@ -452,7 +457,7 @@
 		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
 		name = "SinaConnection.m: 351";
 		rLen = 0;
-		rLoc = 12196;
+		rLoc = 12202;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 11479;
@@ -462,7 +467,7 @@
 		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
 		name = "SinaConnection.m: 281";
 		rLen = 0;
-		rLoc = 10352;
+		rLoc = 10354;
 		rType = 0;
 		vrLen = 1367;
 		vrLoc = 10175;
@@ -661,9 +666,9 @@
 	};
 	D8AF06191869302F00280472 /* SinaController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {927, 3159}}";
-			sepNavSelRange = "{3224, 0}";
-			sepNavVisRange = "{2909, 822}";
+			sepNavIntBoundsRect = "{{0, 0}, {927, 3406}}";
+			sepNavSelRange = "{3026, 0}";
+			sepNavVisRange = "{315, 736}";
 			sepNavWindowFrame = "{{206, 0}, {1069, 778}}";
 		};
 	};
@@ -757,7 +762,7 @@
 		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
 		name = "SinaConnection.m: 351";
 		rLen = 0;
-		rLoc = 12196;
+		rLoc = 12202;
 		rType = 0;
 		vrLen = 1738;
 		vrLoc = 7102;
@@ -787,7 +792,7 @@
 		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
 		name = "SinaConnection.m: 281";
 		rLen = 0;
-		rLoc = 10352;
+		rLoc = 10354;
 		rType = 0;
 		vrLen = 1365;
 		vrLoc = 10175;
@@ -807,7 +812,7 @@
 		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
 		name = "SinaConnection.m: 281";
 		rLen = 0;
-		rLoc = 10352;
+		rLoc = 10354;
 		rType = 0;
 		vrLen = 1365;
 		vrLoc = 10175;
@@ -1148,6 +1153,56 @@
 		vrLen = 822;
 		vrLoc = 2909;
 	};
+	D8B47D7E187C5C5000CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8AF06191869302F00280472 /* SinaController.m */;
+		name = "SinaController.m: 149";
+		rLen = 0;
+		rLoc = 3224;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 2909;
+	};
+	D8B47D82187C5C8300CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8C059DA184A92080006417A /* SinaConnection.m */;
+		name = "SinaConnection.m: 82";
+		rLen = 5;
+		rLoc = 3390;
+		rType = 0;
+		vrLen = 1292;
+		vrLoc = 3181;
+	};
+	D8B47D83187C5C8300CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8AF06191869302F00280472 /* SinaController.m */;
+		name = "SinaController.m: 149";
+		rLen = 0;
+		rLoc = 3224;
+		rType = 0;
+		vrLen = 870;
+		vrLoc = 2567;
+	};
+	D8B47D84187C5C8300CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8AF06191869302F00280472 /* SinaController.m */;
+		name = "SinaController.m: 130";
+		rLen = 0;
+		rLoc = 2855;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 2681;
+	};
+	D8B47D88187C5C9000CFEC1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D8AF06191869302F00280472 /* SinaController.m */;
+		name = "SinaController.m: 142";
+		rLen = 0;
+		rLoc = 3026;
+		rType = 0;
+		vrLen = 736;
+		vrLoc = 315;
+	};
 	D8C059C5184A91660006417A /* SinaPictureUpload */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -1204,9 +1259,9 @@
 	};
 	D8C059DA184A92080006417A /* SinaConnection.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1083, 4485}}";
-			sepNavSelRange = "{1229, 0}";
-			sepNavVisRange = "{0, 1637}";
+			sepNavIntBoundsRect = "{{0, 0}, {936, 4810}}";
+			sepNavSelRange = "{3390, 5}";
+			sepNavVisRange = "{3181, 1292}";
 			sepNavWindowFrame = "{{61, 0}, {1069, 778}}";
 		};
 	};
