@@ -20,6 +20,11 @@
 	[super dealloc];
 }
 
+-(void) awakeFromNib
+{
+	[tvFileList registerForDraggedTypes: [NSArray arrayWithObject:NSFilenamesPboardType]];
+}
+
 -(IBAction) btnLoginClick : (id)sender 
 {
 	
@@ -37,9 +42,19 @@
 		
 		if (ok)
 		{
-			// Close current login window.
-			[windowLogin close];
-			[[self window] makeKeyAndOrderFront:nil];
+			// Fetch user category
+			ok = [sina sinaGetCategory];
+			if (ok)
+			{	
+				// Close current login window.
+				[windowLogin close];
+				[comboCtg reloadData];
+				[[self window] makeKeyAndOrderFront:nil];
+			}
+			else {
+				[labelMsg setStringValue:@"Get user category failed."];
+			}
+
 		}
 		else
 		{
@@ -106,7 +121,15 @@
 			BOOL ok = [sina sinaUploadImageAtPath:filePath];
 			if (ok) 
 			{
-				ok = [sina sinaUploadReceive:fileName];
+				NSString* ctgName = [comboCtg stringValue];
+				NSInteger ctg_index = [sina.m_ctgName indexOfObject:ctgName];
+				if (ctg_index != NSNotFound) {
+					NSString* ctgId = [sina.m_ctgId objectAtIndex:ctg_index];
+					ok = [sina sinaUploadReceive:fileName andCtgId:ctgId];
+				}
+				else {
+					// Failed to get Category index.
+				}
 			}
 		}
 		
@@ -116,9 +139,16 @@
 	[pool release];
 }
 
--(void) awakeFromNib
+-(IBAction) btnLogoutClick:(id)sender
 {
-	[tvFileList registerForDraggedTypes: [NSArray arrayWithObject:NSFilenamesPboardType]];
+	[[self window] close];
+	[picFileList	removeAllObjects];
+	[sina.m_ctgId	removeAllObjects];
+	[sina.m_ctgName removeAllObjects];
+	[txtUser setStringValue:@""];
+	[txtPass setStringValue:@""];
+	
+	[windowLogin makeKeyAndOrderFront:nil];
 }
 
 ////////////////////////
@@ -203,4 +233,18 @@
 		[imageview setImage:image];
 	}
 }
+
+//////////////////////////////////////
+// Combo Protocol
+//////////////////////////////////////
+- (NSInteger) numberOfItemsInComboBox:(NSComboBox *)aComboBox
+{ 
+	return [sina.m_ctgName count];
+}
+
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(int)index
+{
+    return [sina.m_ctgName objectAtIndex:index];
+}
+
 @end

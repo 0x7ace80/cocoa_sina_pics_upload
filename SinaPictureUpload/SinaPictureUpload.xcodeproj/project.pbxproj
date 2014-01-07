@@ -13,6 +13,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		D8AF061A1869302F00280472 /* SinaController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AF06191869302F00280472 /* SinaController.m */; };
+		D8B47D44187C541800CFEC1E /* appIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D8B47D43187C541800CFEC1E /* appIcon.icns */; };
 		D8C059DB184A92080006417A /* SinaConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C059DA184A92080006417A /* SinaConnection.m */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		8D1107320486CEB800E47090 /* SinaPictureUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaPictureUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AF06181869302F00280472 /* SinaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaController.h; sourceTree = "<group>"; };
 		D8AF06191869302F00280472 /* SinaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaController.m; sourceTree = "<group>"; };
+		D8B47D43187C541800CFEC1E /* appIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = appIcon.icns; sourceTree = "<group>"; };
 		D8C059D9184A92080006417A /* SinaConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaConnection.h; sourceTree = "<group>"; };
 		D8C059DA184A92080006417A /* SinaConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D8B47D43187C541800CFEC1E /* appIcon.icns */,
 				8D1107310486CEB800E47090 /* SinaPictureUpload-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -178,6 +181,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				D8B47D44187C541800CFEC1E /* appIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

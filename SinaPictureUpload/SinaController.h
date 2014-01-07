@@ -16,6 +16,7 @@
 	IBOutlet NSImageView*	imageview;
 	
 	IBOutlet NSTableView* tvFileList;
+	IBOutlet NSComboBox* comboCtg;
 }
 
 @property (nonatomic, retain) NSMutableArray* picFileList;
@@ -30,10 +31,11 @@
 -(IBAction) btnCancelClick:(id)sender;
 
 // Actions for MainWindow
--(IBAction) btnAddClick:(id)sender;
+-(IBAction) btnAddClick:   (id)sender;
 -(IBAction) btnRemoveClick:(id)sender;
--(IBAction) btnCleanClick:(id)sender;
+-(IBAction) btnCleanClick: (id)sender;
 -(IBAction) btnUploadClick:(id)sender;
+-(IBAction) btnLogoutClick:(id)sender;
 
 ////////////////////////////////
 // TableView Protocol
@@ -62,4 +64,11 @@
 
 // Delegate
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification;
+
+//////////////////////////////////////
+// Combo Protocol
+//////////////////////////////////////
+- (NSInteger) numberOfItemsInComboBox:(NSComboBox *)aComboBox;
+
+- (id) comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(int)index;
 @end
