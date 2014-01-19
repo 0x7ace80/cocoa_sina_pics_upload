@@ -14,6 +14,11 @@
 	NSMutableArray* m_ctgId;
 }
 
+@property (retain) NSString* m_userId;
+@property (retain) NSString* m_session;
+@property (retain) NSString* m_token;
+@property (retain) NSString* m_recipe;
+
 @property (retain) NSMutableArray* m_ctgName;
 @property (retain) NSMutableArray* m_ctgId;
 

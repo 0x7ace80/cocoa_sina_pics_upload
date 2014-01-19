@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69E76680-957E-4806-B92B-E2B3CF8BDB74</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SinaPictureUpload</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2B664C2A-DB07-49F5-832B-931A48957360</key>
+		<string>https://github.com/future-ok/cocoa_sina_pics_upload</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SinaPictureUpload/SinaPictureUpload.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2B664C2A-DB07-49F5-832B-931A48957360</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/future-ok/cocoa_sina_pics_upload</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2B664C2A-DB07-49F5-832B-931A48957360</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2B664C2A-DB07-49F5-832B-931A48957360</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocoa_sina_pics_upload</string>
+		</dict>
+	</array>
+</dict>
+</plist>

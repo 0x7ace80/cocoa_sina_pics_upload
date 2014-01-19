@@ -16,6 +16,11 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 
 @implementation SinaConnection
 
+@synthesize m_userId;
+@synthesize m_token;
+@synthesize m_session;
+@synthesize m_recipe;
+
 @synthesize m_ctgId;
 @synthesize m_ctgName;
 
@@ -74,11 +79,12 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 	
 	NSArray* strArray = [strResp componentsSeparatedByString:@";"];
 	NSString* UIdPair = [strArray objectAtIndex:0];
-	m_session = [[[[NSString alloc] initWithFormat:@"%@",[strArray objectAtIndex:1]] autorelease] retain];
+    [self setM_session:[[NSString alloc] initWithFormat:@"%@",[strArray objectAtIndex:1]]];
 	
 	NSArray*  UIdArray = [UIdPair componentsSeparatedByString:@"="];
-	m_userId = [[[[NSString alloc] initWithFormat:@"%@",[UIdArray objectAtIndex:1]] autorelease] retain];
-	m_token =  [[[[NSString alloc] initWithFormat:@"%@",[strArray objectAtIndex:2]] autorelease] retain];
+    
+    [self setM_userId:[[[NSString alloc] initWithFormat:@"%@",[UIdArray objectAtIndex:1]] autorelease] ];
+    [self setM_token: [[[NSString alloc] initWithFormat:@"%@",[strArray objectAtIndex:2]] autorelease] ];
 //	NSLog(@"%@", strResp);
 //	NSLog(@"%@", m_session);
 //	NSLog(@"%@", m_userId);
@@ -88,6 +94,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 
 -(BOOL) sinaGetCategory
 {
+    
 	NSMutableString* strCtg = [NSMutableString stringWithString:getCtgURL];
 	[strCtg appendString: @"&uid="];
 	[strCtg appendString: m_userId];
@@ -125,6 +132,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 
 -(BOOL) sinaUploadImageAtPath:(NSString *)ImagePath 
 {
+    NSLog(@"userid count %lu", [m_userId retainCount]);
 	NSMutableString* strUpload = [NSMutableString stringWithString:uploadURL];
 	[strUpload appendString: @"token="];
 	[strUpload appendString: m_token];
@@ -169,7 +177,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 	
 	NSString *content=[[NSString alloc]initWithFormat:@"multipart/form-data; boundary=%@",boundray];
 	[uploadReq setValue:content forHTTPHeaderField:@"Content-Type"];
-	[uploadReq setValue:[NSString stringWithFormat:@"%d", [reqData length]] forHTTPHeaderField:@"Content-Length"];
+	[uploadReq setValue:[NSString stringWithFormat:@"%lu", [reqData length]] forHTTPHeaderField:@"Content-Length"];
 	
 	
 	NSHTTPURLResponse* response = nil;
@@ -188,7 +196,9 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 
 	NSArray* respArray = [strResp componentsSeparatedByString:@"data>"];
 	NSMutableString* tmp = [NSMutableString stringWithString:[respArray objectAtIndex:1]];
-	m_recipe = [[[[NSString alloc] initWithFormat:@"%@",[tmp substringToIndex:([tmp length]-2)]] autorelease] retain];
+	//m_recipe = [[[[NSString alloc] initWithFormat:@"%@",[tmp substringToIndex:([tmp length]-2)]] autorelease] retain];
+    
+    [self setM_recipe:[[[NSString alloc] initWithFormat:@"%@",[tmp substringToIndex:([tmp length]-2)]] autorelease] ];
 
 	return TRUE;
 }
@@ -232,7 +242,7 @@ static NSString* const uploadReceiveCtg=@"&ctgid=544495&uip=192.168.1.1"; // app
 	
 	NSString *content=[[NSString alloc]initWithFormat:@"multipart/form-data; boundary=%@",boundray];
 	[uploadReq setValue:content forHTTPHeaderField:@"Content-Type"];
-	[uploadReq setValue:[NSString stringWithFormat:@"%d", [reqData length]] forHTTPHeaderField:@"Content-Length"];
+	[uploadReq setValue:[NSString stringWithFormat:@"%lu", [reqData length]] forHTTPHeaderField:@"Content-Length"];
 	
 	NSHTTPURLResponse* response = nil;
 	NSError* error = nil;
