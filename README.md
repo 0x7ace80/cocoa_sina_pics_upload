@@ -1,10 +1,10 @@
 cocoa_sina_pics_upload
 ======================
 
-Bulk upload pictures to SINA blog picture library.
+新浪图片库批量上传的 ObjectC 实现。
 
-向SINA图片数据库上传一张图片的步骤：
 
+向SINA图片库上传一张图片的步骤如下：
 
 1. 登录URL
 =
