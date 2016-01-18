@@ -27,7 +27,9 @@ session:  一串Hex，用于Login服务器和图片服务器上识别本次操�
 
 新浪图片允许用户建立不同的“专辑”。上传的时候用户必须指出把图片放到哪个专辑中。
 通过向URL
+
 http://photo.blog.sina.com.cn/apis/client/client_get_photoinfo.php
+
 发送Get请求来得到专辑列表。请求的参数就包括了刚才得到的UserID和token。
 此次Get方法返回一个XML 格式内容，里面包括用户建立的专辑的ID号和名字。ID号是一串数字用于后面上传图片，名字是给用户看的。在后面专辑ID的参数名是“ctgid” ctg应当是category的缩写我猜。
 
@@ -36,7 +38,9 @@ http://photo.blog.sina.com.cn/apis/client/client_get_photoinfo.php
 
 用户选择专辑之后，开始上传图片数据。采用HTTP标准的上传格式（rfc1867 协议）。在上传时必须按照该协议构造数据包，上传数据才能被服务器接收。稍有差池上传都会失败。新浪要求图片不能大于5M。
 通过向URL
+
 http://upload.photo.sina.com.cn/interface/pic_upload.php
+
 发送Post请求上传数据。参数包括了token和Session和包含文件二进制内容的数据包。注意从URL上可以看出和刚才Login的服务器不一样了，这应该是新浪图片专门的服务器。所以要使用Session参数来告诉这个服务器是哪个回话在向你上传数据。下图显示了Post的第一个数据包。
 
 然后一个大的图片数据包会被切割成小块不断向服务器上传。全部数据上传完毕之后服务器还会返回一个xml格式的内容里面包含了回执字串。（recipeString）。如果上传失败则无法得到回执字串。
@@ -47,7 +51,9 @@ http://upload.photo.sina.com.cn/interface/pic_upload.php
 
 告诉Login服务器更新上传图片。由于我们是向另外一台服务器上传了图片，原来的Login的服务器并不知道图片是否已经完成上传，所以需要向Login服务器提交刚才从图片服务器那里得到的回执字串。我猜Login服务器通过回执字串从图片服务器提取上传图片并且处理缩略图等等。
 采用Post方法向URL
+
 http://photo.blog.sina.com.cn/upload/upload_receive.php
+
 上传回执字串。URL上得参数还包括UserID和token和ctgid和图片的名字，这个名字是用户给出的不是上传时的文件名，还包括其他参数诸如appname和Version之类的。
 具体数据包如下图所示。
 
