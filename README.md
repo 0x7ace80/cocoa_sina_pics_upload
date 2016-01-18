@@ -41,7 +41,7 @@ http://photo.blog.sina.com.cn/apis/client/client_get_photoinfo.php
 
 http://upload.photo.sina.com.cn/interface/pic_upload.php
 
-发送Post请求上传数据。参数包括了token和Session和包含文件二进制内容的数据包。注意从URL上可以看出和刚才Login的服务器不一样了，这应该是新浪图片专门的服务器。所以要使用Session参数来告诉这个服务器是哪个回话在向你上传数据。下图显示了Post的第一个数据包。
+发送Post请求上传数据。参数包括了token和Session和包含文件二进制内容的数据包。注意从URL上可以看出和刚才Login的服务器不一样了，这应该是新浪图片专门的服务器。所以要使用Session参数来告诉这个服务器是哪个会话在上传数据。
 
 然后一个大的图片数据包会被切割成小块不断向服务器上传。全部数据上传完毕之后服务器还会返回一个xml格式的内容里面包含了回执字串。（recipeString）。如果上传失败则无法得到回执字串。
 
@@ -55,7 +55,7 @@ http://upload.photo.sina.com.cn/interface/pic_upload.php
 http://photo.blog.sina.com.cn/upload/upload_receive.php
 
 上传回执字串。URL上得参数还包括UserID和token和ctgid和图片的名字，这个名字是用户给出的不是上传时的文件名，还包括其他参数诸如appname和Version之类的。
-具体数据包如下图所示。
+
 
 
 这时如果一切顺利服务器返回OK字符串。整个图片上传过程完成，可以在网页上看到新的图片了。
