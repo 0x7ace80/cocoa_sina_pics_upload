@@ -1,11 +1,9 @@
 cocoa_sina_pics_upload
 ======================
 
-Cocoa SINA Blog Pictures upload.
+Bulk ppload pictures to SINA blog picture library.
 
-Upload pictures to SINA blog picture library.
-
-向SINA图片数据库上传图片的步骤：
+向SINA图片数据库批量上传图片的步骤：
 
 
 1. 登录URL
