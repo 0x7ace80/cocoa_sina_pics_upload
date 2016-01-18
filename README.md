@@ -5,11 +5,15 @@ Cocoa SINA Blog Pictures upload.
 
 Upload pictures to SINA blog picture library.
 
-登录URL
+向SINA图片数据库上传图片的步骤：
+
+
+1. 登录URL
 =
 
 URL:
 http://photo.blog.sina.com.cn/apis/client/client_login.php
+
 发送Http Get 请求。参数就是用户名和密码以及appname和工具版本号。细节如下图所示。
 我们欺骗了服务器，它以为这是一个Microsoft IE 6 发来的请求
 
@@ -18,7 +22,7 @@ userId:   一串数字，代表用户的ID。对于同一个用户来说每次�
 token：   一串Hex，用于Login服务器识别本次操作。每次连接都有不同的token。
 session:  一串Hex，用于Login服务器和图片服务器上识别本次操作。每次连接都有不同值。
 
-获得“专辑列表”
+2. 获得“专辑列表”
 =
 
 新浪图片允许用户建立不同的“专辑”。上传的时候用户必须指出把图片放到哪个专辑中。
@@ -27,7 +31,7 @@ http://photo.blog.sina.com.cn/apis/client/client_get_photoinfo.php
 发送Get请求来得到专辑列表。请求的参数就包括了刚才得到的UserID和token。
 此次Get方法返回一个XML 格式内容，里面包括用户建立的专辑的ID号和名字。ID号是一串数字用于后面上传图片，名字是给用户看的。在后面专辑ID的参数名是“ctgid” ctg应当是category的缩写我猜。
 
-上传图片数据
+3. 上传图片数据
 =
 
 用户选择专辑之后，开始上传图片数据。采用HTTP标准的上传格式（rfc1867 协议）。在上传时必须按照该协议构造数据包，上传数据才能被服务器接收。稍有差池上传都会失败。新浪要求图片不能大于5M。
@@ -38,7 +42,7 @@ http://upload.photo.sina.com.cn/interface/pic_upload.php
 然后一个大的图片数据包会被切割成小块不断向服务器上传。全部数据上传完毕之后服务器还会返回一个xml格式的内容里面包含了回执字串。（recipeString）。如果上传失败则无法得到回执字串。
 
 
-回执
+4. 回执
 =
 
 告诉Login服务器更新上传图片。由于我们是向另外一台服务器上传了图片，原来的Login的服务器并不知道图片是否已经完成上传，所以需要向Login服务器提交刚才从图片服务器那里得到的回执字串。我猜Login服务器通过回执字串从图片服务器提取上传图片并且处理缩略图等等。
