@@ -17,6 +17,8 @@ http://photo.blog.sina.com.cn/apis/client/client_login.php
 发送Http Get 请求。参数就是用户名和密码以及appname和工具版本号。细节如下图所示。
 我们欺骗了服务器，它以为这是一个Microsoft IE 6 发来的请求
 
+![Login](https://github.com/0x7ace80/cocoa_sina_pics_upload/raw/origin/001PI1gJty6Fl68elhUba&690.png)
+
 服务器会返回三个重要参数是后面几步都要用到的：
 userId:   一串数字，代表用户的ID。对于同一个用户来说每次连接都不变。
 token：   一串Hex，用于Login服务器识别本次操作。每次连接都有不同的token。
@@ -56,7 +58,7 @@ http://photo.blog.sina.com.cn/upload/upload_receive.php
 
 上传回执字串。URL上得参数还包括UserID和token和ctgid和图片的名字，这个名字是用户给出的不是上传时的文件名，还包括其他参数诸如appname和Version之类的。
 
-
+![Login](https://github.com/0x7ace80/cocoa_sina_pics_upload/raw/origin/001PI1gJty6Fl687sJBc3&690.jpg)
 
 这时如果一切顺利服务器返回OK字符串。整个图片上传过程完成，可以在网页上看到新的图片了。
 总结起来新浪图片上传流程和平时上衙门办证件的流程挺像：先是拿号（Login），然后到指定窗口填表（选择专辑），然后拿着证明去银行付款（上传图片到图片服务器），之后带着银行收据（回执字串）回去拿证件（更新Login服务器）。
