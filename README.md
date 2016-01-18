@@ -3,7 +3,7 @@ cocoa_sina_pics_upload
 
 Bulk ppload pictures to SINA blog picture library.
 
-向SINA图片数据库批量上传图片的步骤：
+向SINA图片数据库上传一张图片的步骤：
 
 
 1. 登录URL
@@ -60,3 +60,5 @@ http://photo.blog.sina.com.cn/upload/upload_receive.php
 
 这时如果一切顺利服务器返回OK字符串。整个图片上传过程完成，可以在网页上看到新的图片了。
 总结起来新浪图片上传流程和平时上衙门办证件的流程挺像：先是拿号（Login），然后到指定窗口填表（选择专辑），然后拿着证明去银行付款（上传图片到图片服务器），之后带着银行收据（回执字串）回去拿证件（更新Login服务器）。
+
+通过多线程同时上传数据可以获得更高的效能。
